@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect to AWS S3</title>
+</head>
+<body>
+<div class="container">
+    <label><b>Upload:</b></label>
+    <form id="u_form" action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept="uploaded_files/*" multiple>
+        Enter number: <input type="text" name="number" placeholder="Enter num">
+      <input type="submit" name="upload" value="upload" ><br><br>
+    </form>
+     <label><b>Download:</b></label>
+    <form id="d_form" action="/download" method="POST">
+     File Name: <input type="text" name="filename" placeholder="Enter file name">
+	 <input type="submit" name="download" value="download"><br><br>
+   </form>
+    <label><b>List:</b></label>
+    <form id="li_form" action="/list" method="POST">
+        <input type="submit" name="list" value="list"><br><br>
+   </form>
+    <label><b>Delete:</b></label>
+    <form id="del_form" action="/delete" method="POST">
+     File Name: <input type="text" name="filename" placeholder="Enter file name">
+	 <input type="submit" name="delete" value="delete"><br><br>
+   </form>
+    <label><b>View Image:</b></label>
+    <form id="view_form" action="/viewfile" method="POST">
+     Enter number <input type="text" name="number" placeholder="Enter number">
+	 <input type="submit" name="view" value="view"><br><br>
+   </form>
+    <form id="logout_form" action="/logout" method="POST">
+        <input type="submit" name="logout" value="logout"><br><br>
+   </form>
+</div>
+
+</body>
+</html>
