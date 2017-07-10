@@ -13,8 +13,8 @@ import boto3, os, botocore
 from botocore.client import Config
 from flask import Flask, request
 
-ACCESS_KEY_ID = 'AKIAJRDYO54L4JNMEZ3Q'
-ACCESS_SECRET_KEY = '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'
+ACCESS_KEY_ID = ''
+ACCESS_SECRET_KEY = ''
 
 BUCKET_NAME = 'saipriya'
 
